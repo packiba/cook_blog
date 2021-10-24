@@ -86,6 +86,7 @@ img {
 	max-width: 100%;
 }
 
+
 input:focus,
 select:focus,
 button:focus,
@@ -407,6 +408,28 @@ ol {
 	padding: 10px 0;
 }
 
+.dropdown__menu li:hover .children {
+	opacity: 1;
+	visibility: visible;
+	top: 41px;
+}
+
+.dropdown__menu li .children {
+	position: absolute;
+	left: 100px;
+	top: 62px;
+	width: 180px;
+	background: #111;
+	z-index: 9;
+	text-align: left;
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	opacity: 0;
+	visibility: hidden;
+	padding: 10px 0;
+}
+
 .header__menu ul li .dropdown__menu li {
 	display: block;
 	margin-right: 0;
@@ -550,6 +573,11 @@ ol {
 	color: #111111;
 	display: inline-block;
 	margin-right: 10px;
+}
+
+.header__social img {
+	width: 14px;
+	height: 14px;
 }
 
 .header__social a:last-child {
@@ -1487,6 +1515,19 @@ ol {
 	margin-right: 6px;
 }
 
+.humberger__menu__about__social img {
+	height: 16px;
+	width: 16px;
+	margin-bottom: 0;
+	min-width: unset;
+
+}
+
+.sidebar__item__follow__links img {
+	width: 16px;
+	height: 16px;
+}
+
 .sidebar__item__follow__links a:last-child,
 .humberger__menu__about .humberger__menu__about__social a:last-child {
 	margin-right: 0;
@@ -1851,6 +1892,11 @@ ol {
 	margin-bottom: 10px;
 }
 
+.single-post__social__item img {
+	width: 16px;
+	height: 16px;
+}
+
 .single-post__social__item ul li a:last-child {
 	margin-right: 0;
 }
@@ -2204,6 +2250,11 @@ ol {
 	margin-top: 5px;
 }
 
+.single-post__author__profile__social img {
+	width: 16px;
+	height: 16px;
+}
+
 .single-post__author__profile__text .single-post__author__profile__social a:last-child {
 	margin-right: 0;
 }
@@ -2451,6 +2502,11 @@ ol {
 	color: #ffffff;
 }
 
+.footer__social img {
+	width: 16px;
+	height: 16px;
+}
+
 .footer__copyright {
 	font-size: 15px;
 	color: #444444;
@@ -2549,10 +2605,14 @@ ol {
 	margin-right: 0;
 }
 
+.about__right__text__social img {
+	height: 14px;
+	width: 14px;
+}
+
 /*---------------------
   Contact
 -----------------------*/
-
 .contact {
 	padding-top: 0;
 }
@@ -2578,16 +2638,11 @@ ol {
 	margin-bottom: 20px;
 }
 
-.contact__widget ul li i {
-	height: 50px;
-	width: 50px;
-	border: 1px solid #e1e1e1;
-	font-size: 18px;
+.contact__widget ul li img {
+	max-width: 18px;
 	color: #f4952f;
-	line-height: 50px;
-	text-align: center;
-	display: inline-block;
-	margin-right: 16px;
+	margin: 10px 16px;
+	position: relative;
 }
 
 .contact__widget ul li span {

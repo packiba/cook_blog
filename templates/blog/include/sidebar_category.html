@@ -1,0 +1,12 @@
+{% load menu_tags %}
+
+<ul>
+  {% get_category_list as categories %}
+  {% for category in categories %}
+    <li>
+      <a href="{% url 'post_list' category.slug %}">{{ category.name }}</a>
+    </li>
+    {% empty %}
+    <li>Sorry, no categories.</li>
+  {% endfor %}
+</ul>
